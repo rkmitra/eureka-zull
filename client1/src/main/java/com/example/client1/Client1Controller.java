@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Client1Controller {
 	
-	@Value("${eureka.instance.instanceId}")
+	@Value("${eureka.instance.instance-id}")
 	private String id;
 	
 	@RequestMapping(method = RequestMethod.GET, path = "/message")

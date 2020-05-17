@@ -1,0 +1,23 @@
+this is a note for all the projets inside this
+
+1. client1 is server-1 application
+2. client2 is server-2 application
+3. client3 is server-3 application
+4. eureka is a eureka server application where we can register a another server.
+5. zuul is a proxy server.
+
+
+execution dependency -
+1. all the application depends on eureka server - we have to start eureka first
+2. then start zuul proxy if you want to add a proxy server - or load balancing
+3. then start the client applications
+
+
+
+How to check -
+1. open eureka url http://localhost:9090/ - check all other application started or not(To find - Instances currently registered with Eureka)
+2. check each client is running or not using http://localhost:5050/message for client1
+3. check zuul is working or not http://localhost:2020/client1/message
+
+Two cretae more Instances of a single client
+1. change the port and start.
