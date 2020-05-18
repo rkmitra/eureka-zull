@@ -21,3 +21,26 @@ How to check -
 
 Two cretae more Instances of a single client
 1. change the port and start.
+
+
+https -
+Rmitra@A11774 MINGW64 /d/working-self/eureka-zull/client1 (master)
+$ keytool -genkey -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+Enter keystore password:  springboot
+Re-enter new password: springboot
+What is your first and last name?
+  [Unknown]:
+What is the name of your organizational unit?
+  [Unknown]:
+What is the name of your organization?
+  [Unknown]:
+What is the name of your City or Locality?
+  [Unknown]:
+What is the name of your State or Province?
+  [Unknown]:
+What is the two-letter country code for this unit?
+  [Unknown]:
+Is CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown correct?
+  [no]:  yes
+
+keystore.p12 should be inside the project dir
